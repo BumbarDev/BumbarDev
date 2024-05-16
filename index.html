@@ -1,11 +1,71 @@
+
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
+    <link rel="icon" href="logotip.png" type="image/x-icon"/>
     <title>BumbarDev</title>
-    <link rel="stylesheet" href="master.css">
   </head>
   <body>
-<h1 align = "center">BumbarDev</h1>
-<h2 align = "center">Site will be available soon</h2>
+
+
+    <div id="page1">
+      <div class=navigationbar>
+      <img src="logotip.png" class = "logoimage">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+              <li><a href="fprojects.html">Future Projects</a></li>
+
+      </div>
+      <div id="centeredText">
+<h1>BumbarDev</h1>
+</div>
+    </div>
+
+
+
+
+  <div class="contact-panel">
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Email:</strong>bumbardev@gmail.com</li>
+    </ul>
+  </div>
+
+
+
+
+  <script>
+const galleryImages = document.querySelectorAll('.gallery-image');
+let currentImageIndex = 0;
+
+function showImage(index) {
+    galleryImages.forEach((image, i) => {
+        if (i === index) {
+            image.style.display = 'block';
+        } else {
+            image.style.display = 'none';
+        }
+    });
+}
+
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    showImage(currentImageIndex);
+}
+
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    showImage(currentImageIndex);
+}
+
+document.getElementById('next-btn').addEventListener('click', nextImage);
+document.getElementById('prev-btn').addEventListener('click', prevImage);
+
+showImage(currentImageIndex);
+</script>
+
+
+<p align = center>© <a href="https://bumbardev.online/">BumbarDev</a> 2024 all right reserved. <a href="https://bumbardev.online/">Privacy Policy</a> </p>
   </body>
 </html>
