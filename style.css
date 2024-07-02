@@ -59,7 +59,10 @@ li a {
 li a:hover {
   background-color: #111;
 }
-
+.ict
+{
+  background-color: white;
+}
 
 #page1 {
   width: 100%;
@@ -144,6 +147,38 @@ background-repeat: no-repeat;
 
 
 
+.ccpanel {
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #0d0d0c;
+}
+
+.ccpanel h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+.ccpanel p {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+.ccpanel .status {
+      font-size: 20px;
+}
+.ccpanel .comstatus
+{
+  font-size: 25px;
+}
+
+.icth4
+{
+  font-size: 70px;
+}
 
 
 
@@ -203,69 +238,125 @@ background-repeat: no-repeat;
 
 
 
+.card-buttonict {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 30px 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+      color:white;
+}
+
+.card-buttonict:hover {
+    background-color: darkgreen;
+}
+
 
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: green;
-  border-radius: 17px;
-  font-size: 100%;
-  height: 40px;
-  width: 100px;
-  color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
-
 
 
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 }
+
+
+
+.card img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p {
+    margin: 10px 0;
+    font-size: 16px;
+      color:white;
+}
+
+.card-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+      color:white;
+}
+
+.card-button:hover {
+    background-color: darkgreen;
+}
+
+.card-subtext {
+  color:white;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .card:last-child {
+        border-bottom: none;
+    }
+}
+
+.card-p, .title-card
+{
+color: white;
+
+
+.a-card
+{
+  color:blue;
+}
+
+
+
+
+
+
 
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
   border-radius: 5px 5px 0 0;
-}
-
-
-.contact-panel {
-  background-color:#d9d9d9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 20px;
-  max-width: 100%;
-    text-align: center;
-}
-
-.contact-panel h1
-{
-  color: #333;
-  font-size:50px;
-}
-
-.contact-panel h2 {
-  color: #333;
-  font-size: 30px;
-  margin-bottom: 10px;
-
-}
-
-.contact-panel ul {
-  list-style: none;
-  padding: 0;
-  font-size: 20px;
-
-}
-
-.contact-panel li {
-  margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-panel li strong {
-  font-weight: bold;
 }
