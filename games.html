@@ -1,6 +1,19 @@
-
 <html lang="en" dir="ltr">
   <head>
+    <script>
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        function checkScreenSize() {
+            if (isMobileDevice()) {
+                window.location.href = 'internetcafetycoon.html';
+            }
+        }
+
+        window.addEventListener('load', checkScreenSize);
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <link rel="icon" href="logotip.png" type="image/x-icon"/>
@@ -9,29 +22,42 @@
   <body>
 
 
-    <div id="page1">
+
       <div class=navigationbar>
       <img src="logotip.png" class = "logoimage">
           <li><a href="index.html">Home</a></li>
           <li><a href="games.html">Games</a></li>
               <li><a href="3D.html">3D</a></li>
+                  <li><a href="https://patreon.com/bumbardev">Patreon</a></li>
 
       </div>
-      <div id="centeredText">
-<h1>soon!</h1>
-</div>
+
     </div>
 
+    <div class="card-container">
+           <div class="card">
+               <img src="ictlogo.png" alt="Alps">
+               <div class="card-content">
+                 <h3 class="title-card">Internet Cafe Tycoon</h3>
+                   <p class="card-p">Version:1.0.0 (demo)<br>Demo Release date: 15/7/2024<br><br>Build and manage your internet cafe.<br>customize your space to attract more customers. buy/sell/upgrade your tech equipment, your cafe, your rules. how successful you become<br> is entirely up to you.<br><br>Google Play Store Release Date</br>2024/2025</p>
+                   <button class="card-button">Available soon</button>
+                   <small class="card-subtext"></small>
+               </div>
+
+           </div>
+       </div>
+
+
+<!--
+<center>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwRiAn9z_D7Qzlveg6bJIEqxz5z9wd0Nd5lNaP8CHGincaWA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</center>
+-->
 
 
 
 
 
-
-
-
-
-
-<p align = center>© <a href="https://bumbardev.online/">BumbarDev</a> 2024 all right reserved. <a href="https://bumbardev.online/">Privacy Policy</a> </p>
+<p align = center>© <a href="https://bumbardev.online/">BumbarDev</a> 2024 all rights reserved. <a href="https://bumbardev.online/">Privacy Policy</a> </p>
   </body>
 </html>
