@@ -27,14 +27,26 @@
   <h1 class="Naslov">Internet Cafe Tycoon</h1>
 
 <img src="ictlogo.png" alt="Internet Cafe Tycoon" class="ictlogo">
-<h3>FileSize: 100MB <<br>version: 1.0.0 (demo)<br>Platform: Android<br></h3>
+<h3>FileSize: 24.6 MB<br>version: 1.0.0 (demo)<br>Platform: Android<br></h3>
   <h2>Description</h2>
-  <h4> Build and menage your internet cafe.<br>buy/sell/upgrade, your cafe, your rules.<br><br>Google Play Store Release Date: 2024/2025</h4>
+  <h4> Build and menage your internet cafe.<br>buy/sell/upgrade, your cafe, your rules.<br><br>Game is still in beta / demo<br>Google Play Store Release Date: 2024/2025</h4>
   <br><br>
-  <h4>Demo release date: 15/7/2024</h4>
+  <h4>Demo/Beta is Available</h4>
 
-  <button class="card-buttonict" href="Download">15/7/2024</button>
+  <button class="card-buttonict" href="InternetCafeTycoon.apk" id="downloadBtn">Download</button>
 </div>
+
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        const link = document.createElement('a');
+        link.href = 'InternetCafeTycoon.apk';
+        link.download = 'InternetCafeTycoon.apk';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
+
 
 
 <p align = center>© <a href="https://bumbardev.online/">BumbarDev</a> 2024 all rights reserved. <a href="https://bumbardev.online/">Privacy Policy</a> </p>
