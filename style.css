@@ -51,3 +51,14 @@ color: #40d93b;
 img{
   height: 400px;
 }
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
